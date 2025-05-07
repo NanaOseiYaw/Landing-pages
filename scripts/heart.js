@@ -117,5 +117,6 @@ void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     float widthHeightRatio = resolution.x / resolution.y;
     vec2 centre = vec2(0.5, 0.5);
+    vec2 pos = uv - centre;
 }
 `;
