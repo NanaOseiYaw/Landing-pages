@@ -116,8 +116,6 @@ float getSegment(float t, vec2 pos, float offset, float scale){
 void main() {
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     float widthHeightRatio = resolution.x / resolution.y;
-    float glow = getGlow(distance, radius, intensity);
-    float color = smoothstep(0.0, 1.0, glow - distance);
-    gl_FragColor = vec4(vec3(color), 1.0);
+    vec2 centre = vec2(0.5, 0.5);
 }
 `;
