@@ -118,5 +118,10 @@ void main() {
     float widthHeightRatio = resolution.x / resolution.y;
     vec2 centre = vec2(0.5, 0.5);
     vec2 pos = uv - centre;
+    pos.y /y= widthHeightRatio;
+    pos.y += 0.02;
+    float scale = 0.0000015 * height;
+    float t = time;
+    
 }
 `;
